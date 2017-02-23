@@ -26,9 +26,9 @@ KEEP_PROPORTIONS=0.3
 # 0 means "no sharpening". Values in between are possible.
 SHARPEN_SIGMA=2
 
-# Additional options for Imagemagick 'convert'
+# Additional options for ImageMagick 'convert'
 # applied to the sprite sheet before resizing to final size.
-# e.g. "-modulate 100,140" to apply 120% saturation
+# e.g. "-modulate 100,120" to apply 120% saturation
 CONVERT_OPTIONS="-modulate 100,120"
 
 # =========================================
