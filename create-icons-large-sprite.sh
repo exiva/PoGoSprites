@@ -75,7 +75,7 @@ montage $(ls -1 *.png | sort -g) -mode concatenate -tile ${ICONS_PER_ROW}x -back
 
 echo "Resizing (and sharpening) to final sheet."
 (( SHEET_WIDTH = ICONS_PER_ROW * ICON_SIZE ))
-convert icons-intermediate-sprite.png $CONVERT_OPTIONS -sharpen 0x${SHARPEN_SIGMA} -resize ${SHEET_WIDTH}x icons-large-sprite.png
+convert icons-intermediate-sprite.png $CONVERT_OPTIONS -sharpen 0x${SHARPEN_SIGMA} -resize ${SHEET_WIDTH}x png8:icons-large-sprite.png
 rm icons-intermediate-sprite.png
 
 echo "Done. Find your sheet at out/icons-large-sprite.png"
